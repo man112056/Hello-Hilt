@@ -138,23 +138,6 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling.core)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
-    // Dependencies for local unit tests
-    testImplementation(composeBom)
-    testImplementation(libs.junit4)
-    testImplementation(libs.androidx.archcore.testing)
-    testImplementation(libs.kotlinx.coroutines.android)
-    testImplementation(libs.kotlinx.coroutines.test)
-    testImplementation(libs.androidx.navigation.testing)
-    testImplementation(libs.androidx.test.espresso.core)
-    testImplementation(libs.androidx.test.espresso.contrib)
-    testImplementation(libs.androidx.test.espresso.intents)
-    testImplementation(libs.google.truth)
-    testImplementation(libs.androidx.compose.ui.test.junit)
-
-    // JVM tests - Hilt
-    testImplementation(libs.hilt.android.testing)
-    kaptTest(libs.hilt.compiler)
-
     // AndroidX Test - Hilt testing
     androidTestImplementation(libs.hilt.android.testing)
     kaptAndroidTest(libs.hilt.compiler)
