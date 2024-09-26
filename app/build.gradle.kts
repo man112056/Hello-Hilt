@@ -112,13 +112,6 @@ dependencies {
     implementation(libs.timber)
     implementation(libs.androidx.test.espresso.idling.resources)
 
-    // Architecture Components
-    implementation(libs.room.runtime)
-    implementation(libs.room.ktx)
-    ksp(libs.room.compiler)
-    implementation(libs.androidx.lifecycle.runtimeCompose)
-    implementation(libs.androidx.lifecycle.viewModelCompose)
-
     // Hilt
     implementation(libs.hilt.android.core)
     implementation(libs.androidx.hilt.navigation.compose)
