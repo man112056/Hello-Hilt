@@ -109,20 +109,18 @@ dependencies {
     // App dependencies
     implementation(libs.androidx.annotation)
     implementation(libs.kotlinx.coroutines.android)
-    implementation(libs.timber)
     implementation(libs.androidx.test.espresso.idling.resources)
 
     // Hilt
     implementation(libs.hilt.android.core)
     implementation(libs.androidx.hilt.navigation.compose)
     kapt(libs.hilt.compiler)
-    
+
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.lifecycle.runtimeCompose)
     implementation(libs.androidx.lifecycle.viewModelCompose)
     implementation(libs.accompanist.appcompat.theme)
-    implementation(libs.accompanist.swiperefresh)
 
     // AndroidX Test - Hilt testing
     androidTestImplementation(libs.hilt.android.testing)
