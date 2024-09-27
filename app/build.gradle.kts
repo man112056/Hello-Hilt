@@ -108,7 +108,6 @@ dependencies {
 
     // App dependencies
     implementation(libs.androidx.annotation)
-    implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.test.espresso.idling.resources)
 
     // Hilt
