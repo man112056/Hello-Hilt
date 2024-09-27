@@ -116,27 +116,13 @@ dependencies {
     implementation(libs.hilt.android.core)
     implementation(libs.androidx.hilt.navigation.compose)
     kapt(libs.hilt.compiler)
-
-    // Jetpack Compose
-    val composeBom = platform(libs.androidx.compose.bom)
-
+    
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.compose.compiler)
-    implementation(composeBom)
-    implementation(libs.androidx.compose.foundation.core)
-    implementation(libs.androidx.compose.foundation.layout)
-    implementation(libs.androidx.compose.animation)
-    implementation(libs.androidx.compose.material.core)
-    implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.lifecycle.runtimeCompose)
     implementation(libs.androidx.lifecycle.viewModelCompose)
     implementation(libs.accompanist.appcompat.theme)
     implementation(libs.accompanist.swiperefresh)
-
-    debugImplementation(composeBom)
-    debugImplementation(libs.androidx.compose.ui.tooling.core)
-    debugImplementation(libs.androidx.compose.ui.test.manifest)
 
     // AndroidX Test - Hilt testing
     androidTestImplementation(libs.hilt.android.testing)
