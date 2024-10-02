@@ -88,16 +88,6 @@ android {
             freeCompilerArgs += "-opt-in=kotlin.Experimental"
         }
     }
-
-    tasks.register("hiltGenerateDepsGraph", JavaExec::class) {
-        group = "hilt"
-        description = "Generate Hilt Dependency graph in .dot format"
-        mainClass.set("dagger.hilt.android.internal.plugins.DaggerGraphGenerator")
-        classpath = configurations["runtimeClasspath"] + files(android.sourceSets["main"].java.srcDirs)
-        args = listOf("com.samples.manish") // Replace with your actual package name
-        systemProperties["dagger.hilt.android.internal.plugins.dotFile"] = "build/reports/hilt-deps-graph.dot"
-    }
-
 }
 
 /*
